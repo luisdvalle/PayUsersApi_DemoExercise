@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersApi", "UsersApi.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersApi.Test", "..\UsersApi.Test\UsersApi.Test.csproj", "{036AE9F8-EA6E-4B04-A47E-19B7C6C1D3A5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{245FB328-E276-4DF4-B28C-F77BE33BD4B0}"
+	ProjectSection(SolutionItems) = preProject
+		..\Postman\ZipUsersAPI.postman_collection.json = ..\Postman\ZipUsersAPI.postman_collection.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

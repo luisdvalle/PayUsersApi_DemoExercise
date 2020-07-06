@@ -61,7 +61,7 @@ namespace UsersApi.Services
 
         private bool ValidateUser(User user)
         {
-            if (user.MonthlySalary < 1000 || user.MonthlyExpenses > 1000)
+            if (user.MonthlySalary - user.MonthlyExpenses < 1000)
             {
                 return false;
             }

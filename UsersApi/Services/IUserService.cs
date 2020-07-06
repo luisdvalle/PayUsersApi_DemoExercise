@@ -14,19 +14,19 @@ namespace UsersApi.Services
         /// </summary>
         /// <param name="email">The Email Address</param>
         /// <returns>Returns the User if email address is found, otherwise returns null.</returns>
-        Task<User> GetUser(string email);
+        Task<User> GetUserAsync(string email);
 
         /// <summary>
         /// Gets all Users.
         /// </summary>
         /// <returns>An Enumerable of Users objects.</returns>
-        Task<IEnumerable<User>> GetAllUsers();
+        Task<IEnumerable<User>> GetAllUsersAsync();
 
         /// <summary>
         /// Creates an User.
         /// </summary>
         /// <param name="user">The User to be created.</param>
         /// <returns>An UserResult object with the result of this operation.</returns>
-        Task<Result> CreateUser(User user);
+        Task<Result> CreateUserAsync(User user);
     }
 }

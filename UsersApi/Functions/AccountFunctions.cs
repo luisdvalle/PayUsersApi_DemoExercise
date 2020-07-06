@@ -30,7 +30,7 @@ namespace UsersApi.Functions
             var requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             var user = JsonConvert.DeserializeObject<User>(requestBody);
 
-            var result = await _accountService.CreateAccount(user);
+            var result = await _accountService.CreateAccountAsync(user);
 
             switch (result.StatusCode)
             {
@@ -51,7 +51,7 @@ namespace UsersApi.Functions
             HttpRequest req,
             ILogger log)
         {
-            var accounts = await _accountService.GetAllAccounts();
+            var accounts = await _accountService.GetAllAccountsAsync();
 
             return new OkObjectResult(accounts);
         }

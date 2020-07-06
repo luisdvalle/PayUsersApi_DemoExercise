@@ -30,7 +30,7 @@ namespace UsersApi.Functions
             var requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             var user = JsonConvert.DeserializeObject<User>(requestBody);
 
-            var result = await _userService.CreateUser(user);
+            var result = await _userService.CreateUserAsync(user);
 
             switch (result.StatusCode)
             {
@@ -51,7 +51,7 @@ namespace UsersApi.Functions
             [FromRoute] string email,
             ILogger log)
         {
-            var user = await _userService.GetUser(email);
+            var user = await _userService.GetUserAsync(email);
 
             if (user == null)
             {
@@ -67,7 +67,7 @@ namespace UsersApi.Functions
             HttpRequest req,
             ILogger log)
         {
-            var userProfiles = await _userService.GetAllUsers();
+            var userProfiles = await _userService.GetAllUsersAsync();
 
             return new OkObjectResult(userProfiles);
         }

@@ -16,7 +16,7 @@ namespace UsersApi.Services
             _repository = repository;
         }
 
-        public async Task<IEnumerable<Account>> GetAllAccounts()
+        public async Task<IEnumerable<Account>> GetAllAccountsAsync()
         {
             var tableEntities = await _repository.GetAllEntitiesAsync<AccountsTableEntity>(StorageTablesNames.Accounts);
 
@@ -27,7 +27,7 @@ namespace UsersApi.Services
             });
         }
 
-        public async Task<Result> CreateAccount(User user)
+        public async Task<Result> CreateAccountAsync(User user)
         {
             var accountsTableEntity = await _repository.GetEntityAsync<AccountsTableEntity>(StorageTablesNames.Accounts,
                 user.Email, UsersApiConstants.AccountsTableEntityPartitionKey);

@@ -13,13 +13,13 @@ namespace UsersApi.Services
         /// Gets all Accounts.
         /// </summary>
         /// <returns>An Enumerable of Account objects.</returns>
-        Task<IEnumerable<Account>> GetAllAccounts();
+        Task<IEnumerable<Account>> GetAllAccountsAsync();
 
         /// <summary>
         /// Creates an Account for a specified User.
         /// </summary>
         /// <param name="user">The User.</param>
         /// <returns>An AccountResult object with the result of this operation.</returns>
-        Task<Result> CreateAccount(User user);
+        Task<Result> CreateAccountAsync(User user);
     }
 }

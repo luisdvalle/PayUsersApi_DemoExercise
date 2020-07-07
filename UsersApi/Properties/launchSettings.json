@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "UsersApi": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 34019,
+      "useSSL": false
+    }
+  }
+}

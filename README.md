@@ -36,6 +36,9 @@ optionally, you can also install (to help visualise the data in the Storage Tabl
 Microsoft Azure Storage Explorer (link to install: https://azure.microsoft.com/en-us/features/storage-explorer/)
 ```
 
+alternatively, docker support has been added to this project.
+
+
 ### To run this project
 
 * After installing Microsoft Azure Storage Emulator in your machine, open the project in VS and run it.

@@ -30,7 +30,7 @@ Visual Studio 2019 Version 16.4 or higher
 Microsoft Azure Storage Emulator (link to install: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator#get-the-storage-emulator)
 ```
 
-alternatively, you can also install (to help visualise the data in the Storage Tables),
+optionally, you can also install (to help visualise the data in the Storage Tables),
 
 ```
 Microsoft Azure Storage Explorer (link to install: https://azure.microsoft.com/en-us/features/storage-explorer/)

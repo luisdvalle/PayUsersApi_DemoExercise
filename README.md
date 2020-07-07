@@ -26,6 +26,7 @@ Visual Studio 2019 Version 16.4 or higher
 ```
 .NET Core 3.1 SDK (or lower if you choose to point the project to another version of .NET Core, like 2.1 for example
 ```
+optionally, the solution can be run against Microsoft Azure Storage Emulator. In that case plese install the resource below:
 ```
 Microsoft Azure Storage Emulator (link to install: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator#get-the-storage-emulator)
 ```
@@ -40,7 +41,7 @@ alternatively, docker support has been added to this project.
 
 ### Database connections
 
-I have provisioned an Azure Storage Table resource in my personal account in Azure. When running the project, the application will store all data into that provisioned resource, however if needed, the development storage emulator can be used instead by changing the following setting in local.settings.json:
+I have provisioned an Azure Storage Table resource in my personal account and use it with this project in order to facilitate running this application without having to install the Storage Emulator. However if needed, the development storage emulator can be used instead by changing the following setting in local.settings.json:
 
 ```
 "AzureWebJobsStorage": "UseDevelopmentStorage=true"

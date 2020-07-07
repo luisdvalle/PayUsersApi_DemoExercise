@@ -38,6 +38,14 @@ Microsoft Azure Storage Explorer (link to install: https://azure.microsoft.com/e
 
 alternatively, docker support has been added to this project.
 
+### Database connections
+
+I have provisioned and Azure Storage Table resource in my personal account in Azure. When running the project the application will store all data into that provisioned resource, however if needed, the development storage emulator can be used as well by changing the following setting in local.settings.json:
+
+```
+"AzureWebJobsStorage": "UseDevelopmentStorage=true"
+```
+
 
 ### To run this project
 

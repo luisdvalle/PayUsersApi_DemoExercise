@@ -1,11 +1,6 @@
 # Pay challenge
 API to manage Pay users.
 
-Hi Zip team. This project has been created to provide a solution for the Coding Challenge test - API to manage Zip Pay users - and as part of my application for a Software Engineer role at Zip. In the sections below you will find comments, assumptions and requirements to run this project. Thank you for the chance to solve this test.
-Luis Del Valle
-0452523942
-luis@luis-delvalle.com
-
 ### Application components
 
 This VS Solution includes
